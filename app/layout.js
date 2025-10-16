@@ -47,6 +47,9 @@ export const metadata = {
   authors: [{ name: "Muhammad Sadeeq" }],
   creator: "Muhammad Sadeeq",
   publisher: "Muhammad Sadeeq",
+  verification: {
+    google: "thG7tu7PbrvSF3MF4zevdiT8RrLLdB5QA_gPwswjH5Q",
+  },
   robots: {
     index: true,
     follow: true,
@@ -61,7 +64,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://muhammadsadeeq.dev",
+    url: "https://www.sadeeqdev.tech",
     title: "Muhammad Sadeeq - Full Stack Developer & UI/UX Designer",
     description:
       "Professional Full Stack Developer and UI/UX Designer with 5+ years of experience. Specializing in React, Next.js, Node.js, and modern web technologies.",
@@ -84,7 +87,7 @@ export const metadata = {
     creator: "@muhammadsadeeq",
   },
   alternates: {
-    canonical: "https://muhammadsadeeq.dev",
+    canonical: "https://www.sadeeqdev.tech",
   },
   category: "technology",
 };
