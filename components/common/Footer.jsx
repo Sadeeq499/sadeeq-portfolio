@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
   FaGithub,
   FaLinkedin,
@@ -29,36 +30,48 @@ function Footer() {
           <div className="text-center">
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <a
-                href="#home"
+              <Link
+                href="/"
                 className="text-gray-400 hover:text-[#FF014F] transition-colors duration-300"
               >
                 Home
-              </a>
-              <a
-                href="#about"
+              </Link>
+              <Link
+                href="/about"
                 className="text-gray-400 hover:text-[#FF014F] transition-colors duration-300"
               >
                 About
-              </a>
-              <a
-                href="#services"
+              </Link>
+              <Link
+                href="/services"
                 className="text-gray-400 hover:text-[#FF014F] transition-colors duration-300"
               >
                 Services
-              </a>
-              <a
-                href="#projects"
+              </Link>
+              <Link
+                href="/resume"
+                className="text-gray-400 hover:text-[#FF014F] transition-colors duration-300"
+              >
+                Resume
+              </Link>
+              <Link
+                href="/skills"
+                className="text-gray-400 hover:text-[#FF014F] transition-colors duration-300"
+              >
+                Skills
+              </Link>
+              <Link
+                href="/projects"
                 className="text-gray-400 hover:text-[#FF014F] transition-colors duration-300"
               >
                 Projects
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                href="/contact"
                 className="text-gray-400 hover:text-[#FF014F] transition-colors duration-300"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -96,13 +109,9 @@ function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
               © {currentYear} Muhammad Sadeeq. All rights reserved.
-            </p>
-            <p className="text-gray-400 text-sm flex items-center gap-2">
-              Made with <FaHeart className="w-4 h-4 text-[#FF014F]" /> using
-              Next.js & Tailwind CSS
             </p>
           </div>
         </div>

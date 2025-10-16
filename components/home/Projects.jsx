@@ -1,79 +1,150 @@
 import React from "react";
-import {
-  FaGithub,
-  FaExternalLinkAlt,
-  FaCode,
-  FaMobile,
-  FaGlobe,
-} from "react-icons/fa";
+import { FaExternalLinkAlt, FaCode, FaMobile, FaGlobe } from "react-icons/fa";
 
 function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Sabi Unique Collection",
       description:
-        "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
+        "Luxury fashion e-commerce store offering premium unstitched and ready-to-wear clothing, curated collections, and exclusive accessories for modern style.",
       image: "/api/placeholder/400/300",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "#",
-      live: "#",
-      category: "Web App",
+      live: "https://sabiuniquecollection.com/",
+      category: "E-Commerce",
       icon: FaGlobe,
     },
     {
-      title: "Task Management App",
+      title: "Vacanzy",
       description:
-        "A collaborative task management application with real-time updates, team collaboration features, and project tracking capabilities.",
+        "End-to-end business services platform offering company formation, trade licensing, visa & immigration support, compliance, and digital dashboard tools.",
       image: "/api/placeholder/400/300",
-      technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-      github: "#",
-      live: "#",
-      category: "Web App",
+      live: "https://vacanzy.co/",
+      category: "Business Services",
       icon: FaCode,
     },
     {
-      title: "Fitness Tracker Mobile App",
+      title: "GSTSA1",
       description:
-        "Cross-platform mobile application for fitness tracking with workout plans, progress monitoring, and social features.",
+        "Saudi Arabia technology & compliance company delivering barcode, RFID, inventory management, product tracking, and supply chain authentication solutions. :contentReference[oaicite:0]{index=0}",
       image: "/api/placeholder/400/300",
-      technologies: ["React Native", "Firebase", "Redux", "Expo"],
-      github: "#",
-      live: "#",
+      live: "https://gstsa1.org/",
+      category: "Tax Services",
+      icon: FaGlobe,
+    },
+    {
+      title: "Saddy Voices",
+      description:
+        "Voiceover & audio production agency working with international clients, providing studio recording, dubbing, narration, and multilingual voice talent services.",
+      image: "/api/placeholder/400/300",
+      live: "https://www.saddyvoices.com/",
+      category: "Media Platform",
+      icon: FaGlobe,
+    },
+    {
+      title: "Cyber Nexus LLC",
+      description:
+        "IT & cybersecurity firm offering consulting, infrastructure security, managed services, threat assessments, and enterprise protection solutions.",
+      image: "/api/placeholder/400/300",
+      live: "https://www.cybernexusllc.us/",
+      category: "Cybersecurity",
+      icon: FaCode,
+    },
+    {
+      title: "SJS System",
+      description:
+        "Saudi–Japanese business council portal facilitating trade, investment, and strategic cooperation between Saudi Arabia and Japan.",
+      image: "/api/placeholder/400/300",
+      live: "https://sjs.gstsa1.org/",
+      category: "Education",
+      icon: FaCode,
+    },
+    {
+      title: "FWatch",
+      description:
+        "FireWatch is a smart platform for tracking and managing fire safety equipment. It ensures compliance and readiness through real-time monitoring and automated inspections.",
+      image: "/api/placeholder/400/300",
+      live: "https://fwatch.gstsa1.org/",
+      category: "Finance",
+      icon: FaGlobe,
+    },
+    {
+      title: "Buy Barcode UPC",
+      description:
+        "Platform for GTIN/UPC barcode issuance, barcode generation, product labeling, and inventory & identification support for businesses.",
+      image: "/api/placeholder/400/300",
+      live: "https://buybarcodeupc.com/",
+      category: "Business Tools",
+      icon: FaCode,
+    },
+    {
+      title: "SUE Realty",
+      description:
+        "Dubai real estate brokerage and investment firm specializing in luxury property listings, off-plan developments, and property advisory services.",
+      image: "/api/placeholder/400/300",
+      live: "https://suerealty.com/",
+      category: "Real Estate",
+      icon: FaGlobe,
+    },
+    {
+      title: "Nartec Solutions",
+      description:
+        "Tech solutions company delivering software development, automation, IoT, and business process optimization tools.",
+      image: "/api/placeholder/400/300",
+      live: "https://nartec-solutions.com/",
+      category: "Tech Solutions",
+      icon: FaCode,
+    },
+    {
+      title: "GRoute Admin",
+      description:
+        "This Transportation & Logistics System tracks inventory, delivery routes, and sales orders in real time. It offers performance analytics and master data to optimize operations and ensure timely deliveries.",
+      image: "/api/placeholder/400/300",
+      live: "https://admin.groute.online/",
+      category: "Logistics",
+      icon: FaGlobe,
+    },
+    {
+      title: "Quranic World",
+      description:
+        "Quranic World is an online academy offering live Quran and Arabic courses for all levels. It provides flexible scheduling, expert teachers, and interactive learning tools.",
+      image: "/api/placeholder/400/300",
+      live: "https://quranic-world.vercel.app/",
+      category: "Education",
+      icon: FaGlobe,
+    },
+    {
+      title: "Food App (React Native)",
+      description:
+        "Mobile food delivery app built with React Native, featuring restaurant listings, menu browsing, order checkout, and delivery tracking.",
+      image: "/api/placeholder/400/300",
+      live: "https://github.com/Sadeeq499/food-app-react-native",
       category: "Mobile App",
       icon: FaMobile,
     },
     {
-      title: "Portfolio Website",
+      title: "GPOS Dashboard",
       description:
-        "Modern, responsive portfolio website showcasing projects and skills with smooth animations and dark theme.",
+        "Retail & point-of-sale analytics dashboard with inventory management, sales tracking, reporting metrics, and business insights.",
       image: "/api/placeholder/400/300",
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
-      github: "#",
-      live: "#",
-      category: "Web App",
-      icon: FaGlobe,
-    },
-    {
-      title: "Weather Dashboard",
-      description:
-        "Real-time weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image: "/api/placeholder/400/300",
-      technologies: ["Vue.js", "Chart.js", "OpenWeather API", "PWA"],
-      github: "#",
-      live: "#",
-      category: "Web App",
+      live: "https://gposv2.gtrack.online/dashboard",
+      category: "POS System",
       icon: FaCode,
     },
     {
-      title: "Social Media Analytics",
+      title: "Liaison Consultancy",
       description:
-        "Analytics platform for social media management with insights, scheduling, and performance tracking across platforms.",
+        "Liaison Consultancy Services digitizes building permissions and development rights under HMDA. It streamlines applications through platforms like TG-bPASS and the TDR portal",
       image: "/api/placeholder/400/300",
-      technologies: ["Angular", "D3.js", "Express.js", "MySQL"],
-      github: "#",
-      live: "#",
-      category: "Web App",
+      live: "https://liaison-consultancy-services.vercel.app/",
+      category: "Consulting",
       icon: FaGlobe,
+    },
+    {
+      title: "Amex Financial",
+      description: "---",
+      image: "/api/placeholder/400/300",
+      live: "https://amex.fatsme.online/",
+      category: "Fintech",
+      icon: FaCode,
     },
   ];
 
@@ -123,33 +194,16 @@ function Projects() {
                     {project.description}
                   </p>
 
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Action Buttons */}
-                  <div className="flex gap-3">
-                    <a
-                      href={project.github}
-                      className="flex-1 bg-gray-800 hover:bg-[#FF014F] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-300 flex items-center justify-center gap-2"
-                    >
-                      <FaGithub className="w-4 h-4" />
-                      Code
-                    </a>
+                  {/* Action Button */}
+                  <div className="flex justify-center">
                     <a
                       href={project.live}
-                      className="flex-1 bg-[#FF014F] hover:bg-[#e6003a] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-300 flex items-center justify-center gap-2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full bg-[#FF014F] hover:bg-[#e6003a] text-white px-6 py-3 rounded-lg text-sm font-medium transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-105"
                     >
                       <FaExternalLinkAlt className="w-4 h-4" />
-                      Live
+                      View Project
                     </a>
                   </div>
                 </div>

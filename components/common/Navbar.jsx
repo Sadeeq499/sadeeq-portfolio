@@ -1,14 +1,24 @@
+"use client";
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
+  const pathname = usePathname();
+
+  const isActive = (path) => {
+    if (path === "/" && pathname === "/") return true;
+    if (path !== "/" && pathname.startsWith(path)) return true;
+    return false;
+  };
+
   return (
     <nav className="bg-black text-white px-8 py-4 sticky top-0 z-50 border-b border-white/10">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         {/* Logo/Brand */}
         <div className="flex-shrink-0">
           <Link
-          href="/"
+            href="/"
             className="font-pacifico text-2xl text-white hover:opacity-80 transition-opacity duration-300"
           >
             <span className="text-[#FF014F]">M</span>uhammad{" "}
@@ -20,43 +30,71 @@ function Navbar() {
         <div className="hidden md:flex items-center gap-8 flex-1 justify-center">
           <Link
             href="/"
-            className="text-[#FF014F] font-medium text-sm hover:text-white transition-colors duration-300"
+            className={`font-medium text-sm transition-colors duration-300 ${
+              isActive("/")
+                ? "text-[#FF014F]"
+                : "text-gray-300 hover:text-white"
+            }`}
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-gray-300 font-medium text-sm hover:text-white transition-colors duration-300"
+            className={`font-medium text-sm transition-colors duration-300 ${
+              isActive("/about")
+                ? "text-[#FF014F]"
+                : "text-gray-300 hover:text-white"
+            }`}
           >
             About
           </Link>
           <Link
             href="/services"
-            className="text-gray-300 font-medium text-sm hover:text-white transition-colors duration-300"
+            className={`font-medium text-sm transition-colors duration-300 ${
+              isActive("/services")
+                ? "text-[#FF014F]"
+                : "text-gray-300 hover:text-white"
+            }`}
           >
             Services
           </Link>
           <Link
             href="/resume"
-            className="text-gray-300 font-medium text-sm hover:text-white transition-colors duration-300"
+            className={`font-medium text-sm transition-colors duration-300 ${
+              isActive("/resume")
+                ? "text-[#FF014F]"
+                : "text-gray-300 hover:text-white"
+            }`}
           >
             Resume
           </Link>
           <Link
             href="/skills"
-            className="text-gray-300 font-medium text-sm hover:text-white transition-colors duration-300"
+            className={`font-medium text-sm transition-colors duration-300 ${
+              isActive("/skills")
+                ? "text-[#FF014F]"
+                : "text-gray-300 hover:text-white"
+            }`}
           >
             Skills
           </Link>
           <Link
             href="/projects"
-            className="text-gray-300 font-medium text-sm hover:text-white transition-colors duration-300"
+            className={`font-medium text-sm transition-colors duration-300 ${
+              isActive("/projects")
+                ? "text-[#FF014F]"
+                : "text-gray-300 hover:text-white"
+            }`}
           >
             Projects
           </Link>
           <Link
             href="/contact"
-            className="text-gray-300 font-medium text-sm hover:text-white transition-colors duration-300"
+            className={`font-medium text-sm transition-colors duration-300 ${
+              isActive("/contact")
+                ? "text-[#FF014F]"
+                : "text-gray-300 hover:text-white"
+            }`}
           >
             Contact
           </Link>

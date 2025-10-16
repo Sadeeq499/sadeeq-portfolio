@@ -1,50 +1,98 @@
 import React from "react";
 import {
   FaGlobe,
-  FaPalette,
-  FaMobileAlt,
   FaCode,
+  FaPalette,
+  FaShieldAlt,
   FaCreditCard,
-  FaUserGraduate,
+  FaMapMarkerAlt,
+  FaRocket,
+  FaDatabase,
+  FaFlask,
+  FaTachometerAlt,
+  FaComments,
+  FaCogs,
 } from "react-icons/fa";
 
 function Services() {
   const services = [
     {
       icon: FaGlobe,
-      title: "WEB DEVELOPMENT",
+      title: "FULL-STACK WEB DEVELOPMENT",
       description:
-        "Modern and mobile-ready website that will help you reach all of your marketing.",
-    },
-    {
-      icon: FaPalette,
-      title: "UI/UX DESIGN",
-      description:
-        "Create intuitive interfaces and delightful user experiences by blending aesthetics with usability.",
-    },
-    {
-      icon: FaMobileAlt,
-      title: "APP DEVELOPMENT",
-      description:
-        "Modern and mobile-ready application that will help you reach all of your marketing.",
+        "Scalable and secure web apps built using React, Node.js, Express, and modern databases like MongoDB, MySQL, and PostgreSQL.",
     },
     {
       icon: FaCode,
-      title: "API DESIGN / INTEGRATION",
+      title: "BACKEND API DEVELOPMENT",
       description:
-        "Developing a highly secure, fast and scalable APIs both REST and GraphQL.",
+        "RESTful APIs with authentication, validation, pagination, error handling, and documentation using Express.js, Prisma, and Swagger.",
+    },
+    {
+      icon: FaPalette,
+      title: "FRONTEND ARCHITECTURE",
+      description:
+        "High-performance UIs using React, Vite, Redux Toolkit, Zustand, and React Query with lazy loading and code splitting.",
+    },
+    {
+      icon: FaPalette,
+      title: "UI/UX & DESIGN SYSTEMS",
+      description:
+        "Clean, responsive interfaces using Tailwind CSS, Material UI, and Framer Motion — translating Figma designs into code.",
+    },
+    {
+      icon: FaShieldAlt,
+      title: "AUTHENTICATION & SECURITY",
+      description:
+        "JWT, OAuth 2.0, social logins, rate limiting, and input sanitization — ensuring your app stays secure end to end.",
     },
     {
       icon: FaCreditCard,
-      title: "PAYMENT INTEGRATION",
+      title: "PAYMENT GATEWAY INTEGRATION",
       description:
-        "Automate the process of payments to allow users pay right on your platform",
+        "Stripe, Razorpay, and PayPal integration with webhooks for order management, subscriptions, and invoice automation.",
     },
     {
-      icon: FaUserGraduate,
-      title: "MENTORSHIP",
+      icon: FaMapMarkerAlt,
+      title: "MAPS & LOCATION SERVICES",
       description:
-        "Finds great joy in sharing my knowledge with others. As a technical mentor this allows me to give back to the community.",
+        "Google Maps, Mapbox, and Leaflet integrations for address autocomplete, tracking, and custom location markers.",
+    },
+    {
+      icon: FaRocket,
+      title: "DEPLOYMENT & DEVOPS",
+      description:
+        "CI/CD pipelines, Docker, PM2, and NGINX setups on Vercel, Netlify, or VPS with SSL via Certbot for production-ready apps.",
+    },
+    {
+      icon: FaDatabase,
+      title: "DATABASE & CACHE SYSTEMS",
+      description:
+        "Database design and optimization using MongoDB, MySQL, PostgreSQL, Prisma ORM, and Redis for caching and queues.",
+    },
+    {
+      icon: FaFlask,
+      title: "TESTING & API VALIDATION",
+      description:
+        "Comprehensive testing with Jest, Mocha, Cypress, and Postman — ensuring reliable and bug-free delivery.",
+    },
+    {
+      icon: FaTachometerAlt,
+      title: "PERFORMANCE & OPTIMIZATION",
+      description:
+        "Code splitting, caching, SEO optimization, and Lighthouse audits to make your app fast and efficient.",
+    },
+    {
+      icon: FaComments,
+      title: "REAL-TIME COMMUNICATION",
+      description:
+        "Live data updates and chat features built with Socket.io, STOMP, and Redis-based message queues.",
+    },
+    {
+      icon: FaCogs,
+      title: "DEVOPS & INFRASTRUCTURE",
+      description:
+        "Process management with PM2, Docker containerization, CI/CD automation, and NGINX reverse proxy configuration.",
     },
   ];
 

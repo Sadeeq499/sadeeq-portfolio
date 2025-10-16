@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
@@ -7,55 +7,56 @@ function Resume() {
   const [expandedExperience, setExpandedExperience] = useState([0]);
 
   const toggleEducation = (index) => {
-    setExpandedEducation(prev => 
-      prev.includes(index) 
-        ? prev.filter(i => i !== index)
-        : [...prev, index]
+    setExpandedEducation((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
     );
   };
 
   const toggleExperience = (index) => {
-    setExpandedExperience(prev => 
-      prev.includes(index) 
-        ? prev.filter(i => i !== index)
-        : [...prev, index]
+    setExpandedExperience((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
     );
   };
 
   const educationData = [
     {
-      institution: "Moringa School",
-      degree: "Software Development",
-      period: "2021 - 2021",
-      description: "Diligently attended software development courses, advancing skills and knowledge. With this being a continuous improvement, got to learn to contribute effectively in software development roles."
+      institution: "Islamia College University Peshawar",
+      degree: "Bachelor of Science - Software Engineering",
+      period: "2019 - 2023",
+      description:
+        "Comprehensive study of software engineering principles, algorithms, data structures, software development methodologies, and computer science fundamentals.",
     },
     {
-      institution: "Jomo Kenyatta University of Agriculture and Technology (JKUAT)",
-      degree: "Computer Science",
-      period: "2018 - 2022",
-      description: "Comprehensive study of computer science fundamentals, algorithms, data structures, and software engineering principles."
-    }
+      institution: "Muslim Model School and College",
+      degree: "Higher Secondary Education - Computer Science",
+      period: "2017 - 2019",
+      description:
+        "Completed higher secondary education with focus on computer science fundamentals, mathematics, and programming basics.",
+    },
   ];
 
   const experienceData = [
     {
-      company: "Weza Prosoft Limited",
-      position: "Software Engineer",
-      period: "Oct 2020 - PRESENT",
-      description: "Create of web applications that maintains high standards of code quality and smart application design to ensure application performance, uptime, and scale."
+      company: "Nartec-Solutions",
+      position: "Full Stack Engineer",
+      period: "Nov 2023 - PRESENT",
+      description:
+        "Developed comprehensive software solutions including Inventory Control & Tracking systems, Traceability System Solutions for supply chain management, Warehouse Management Solutions, Fixed Assets/Asset Tracking & Tagging systems, Barcode/Labeling/POS & scanning systems, Queue Management Systems, and Field Service Management applications. Provided consulting, deployment, and support for technology systems.",
     },
     {
-      company: "Paya Ventures Ltd (Paya Finance)",
+      company: "ExtremSoft",
       position: "Full Stack Developer",
-      period: "Jan 2019 - Sep 2020",
-      description: "Developed and maintained financial applications with focus on security and performance optimization."
+      period: "Dec 2020 - Oct 2023",
+      description:
+        "Developed full-stack applications for multiple businesses, SaaS applications, and management systems. Focused on creating scalable and efficient solutions for various business needs.",
     },
     {
-      company: "Moringa School",
-      position: "Technical Mentor",
-      period: "Jun 2021 - Dec 2021",
-      description: "Mentored students in software development, conducted code reviews, and facilitated learning sessions."
-    }
+      company: "Tech Emulsion",
+      position: "Frontend Developer",
+      period: "Feb 2020 - Sep 2020",
+      description:
+        "Created web applications that maintain high standards of code quality and smart application design to ensure application performance, uptime, and scalability.",
+    },
   ];
 
   return (
@@ -65,7 +66,8 @@ function Resume() {
         <div className="text-center mb-16">
           <p className="text-gray-400 text-lg mb-4">My Resume</p>
           <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-            Real <span className="text-[#FF014F]">Problem Solutions</span> Experience
+            Real <span className="text-[#FF014F]">Problem Solutions</span>{" "}
+            Experience
           </h2>
         </div>
 
@@ -74,10 +76,10 @@ function Resume() {
           {/* Education Section */}
           <div className="relative">
             <h3 className="text-3xl font-bold text-white mb-8">Education</h3>
-            
+
             {/* Timeline Line */}
             <div className="absolute left-8 top-16 w-0.5 h-full bg-gray-700"></div>
-            
+
             <div className="space-y-8">
               {educationData.map((edu, index) => (
                 <div key={index} className="relative flex items-start gap-6">
@@ -102,7 +104,7 @@ function Resume() {
                     </h4>
                     <p className="text-gray-400 italic mb-2">{edu.degree}</p>
                     <p className="text-gray-400 text-sm mb-3">{edu.period}</p>
-                    
+
                     {expandedEducation.includes(index) && (
                       <p className="text-gray-300 text-sm leading-relaxed">
                         {edu.description}
@@ -117,10 +119,10 @@ function Resume() {
           {/* Experience Section */}
           <div className="relative">
             <h3 className="text-3xl font-bold text-white mb-8">Experience</h3>
-            
+
             {/* Timeline Line */}
             <div className="absolute left-8 top-16 w-0.5 h-full bg-gray-700"></div>
-            
+
             <div className="space-y-8">
               {experienceData.map((exp, index) => (
                 <div key={index} className="relative flex items-start gap-6">
@@ -145,15 +147,16 @@ function Resume() {
                     </h4>
                     <p className="text-gray-400 italic mb-2">{exp.position}</p>
                     <p className="text-gray-400 text-sm mb-3">
-                      {exp.period.includes('PRESENT') ? (
+                      {exp.period.includes("PRESENT") ? (
                         <>
-                          {exp.period.split(' - ')[0]} - <span className="text-[#FF014F]">PRESENT</span>
+                          {exp.period.split(" - ")[0]} -{" "}
+                          <span className="text-[#FF014F]">PRESENT</span>
                         </>
                       ) : (
                         exp.period
                       )}
                     </p>
-                    
+
                     {expandedExperience.includes(index) && (
                       <p className="text-gray-300 text-sm leading-relaxed">
                         {exp.description}

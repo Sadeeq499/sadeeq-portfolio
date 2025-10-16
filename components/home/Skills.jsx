@@ -1,174 +1,429 @@
 import React from "react";
 
 function Skills() {
-  const skills = [
+  const skillCategories = [
     {
-      name: "Javascript",
-      logo: (
-        <div className="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center">
-          <span className="text-black font-bold text-lg">JS</span>
-        </div>
-      ),
+      title: "💻 Programming & Scripting",
+      skills: [
+        {
+          name: "JavaScript",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg",
+        },
+        {
+          name: "TypeScript",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/typescript.svg",
+        },
+      ],
     },
     {
-      name: "Typescript",
-      logo: (
-        <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-          <span className="text-white font-bold text-lg">TS</span>
-        </div>
-      ),
+      title: "⚙️ Frameworks & Libraries",
+      skills: [
+        {
+          name: "Node.js",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg",
+        },
+        {
+          name: "Express.js",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/express.svg",
+        },
+        {
+          name: "React",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg",
+        },
+        {
+          name: "React Native",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg",
+        },
+        {
+          name: "Next.js",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nextdotjs.svg",
+        },
+      ],
     },
     {
-      name: "Python",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
-              fill="#3776ab"
-            />
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
-              fill="#ffd43b"
-            />
-          </svg>
-        </div>
-      ),
+      title: "🧠 State Management & Architecture",
+      skills: [
+        {
+          name: "Redux Toolkit",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/redux.svg",
+        },
+        {
+          name: "Zustand",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zustand.svg",
+        },
+        {
+          name: "React Query",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/reactquery.svg",
+        },
+        {
+          name: "Context API",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg",
+        },
+        {
+          name: "React Hooks",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg",
+        },
+      ],
     },
     {
-      name: "PHP",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-xs">php</span>
-          </div>
-        </div>
-      ),
+      title: "🗄️ Databases & ORMs",
+      skills: [
+        {
+          name: "MongoDB",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg",
+        },
+        {
+          name: "MySQL",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg",
+        },
+        {
+          name: "PostgreSQL",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postgresql.svg",
+        },
+        {
+          name: "Prisma ORM",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/prisma.svg",
+        },
+        {
+          name: "Mongoose",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg",
+        },
+        {
+          name: "Redis",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/redis.svg",
+        },
+      ],
     },
     {
-      name: "Next Js",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-            <span className="text-black font-bold text-xs">NEXT</span>
-          </div>
-        </div>
-      ),
+      title: "🧩 DevOps & Infrastructure",
+      skills: [
+        {
+          name: "Docker",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg",
+        },
+        {
+          name: "VPS",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linux.svg",
+        },
+        {
+          name: "PM2",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg",
+        },
+        {
+          name: "NGINX",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nginx.svg",
+        },
+        {
+          name: "Jenkins",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jenkins.svg",
+        },
+        {
+          name: "Certbot",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/letsencrypt.svg",
+        },
+        {
+          name: "Vercel",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vercel.svg",
+        },
+        {
+          name: "Netlify",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/netlify.svg",
+        },
+        {
+          name: "Firebase",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/firebase.svg",
+        },
+      ],
     },
     {
-      name: "React",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <svg
-            className="w-8 h-8 text-blue-400"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <circle cx="12" cy="12" r="2" />
-            <path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zm0 20c-4.962 0-9-4.038-9-9s4.038-9 9-9 9 4.038 9 9-4.038 9-9 9z" />
-            <path d="M12 6c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6zm0 10c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z" />
-          </svg>
-        </div>
-      ),
+      title: "🔐 Authentication & Security",
+      skills: [
+        {
+          name: "JWT",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jsonwebtokens.svg",
+        },
+        {
+          name: "OAuth 2.0",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/auth0.svg",
+        },
+        {
+          name: "Google Login",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg",
+        },
+        {
+          name: "Facebook Login",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg",
+        },
+        {
+          name: "RBAC",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/okta.svg",
+        },
+        {
+          name: "Rate Limiting",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cloudflare.svg",
+        },
+      ],
     },
     {
-      name: "React Native",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <svg
-            className="w-8 h-8 text-blue-400"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <circle cx="12" cy="12" r="2" />
-            <path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zm0 20c-4.962 0-9-4.038-9-9s4.038-9 9-9 9 4.038 9 9-4.038 9-9 9z" />
-            <path d="M12 6c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6zm0 10c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z" />
-          </svg>
-        </div>
-      ),
+      title: "🧰 Developer Tools",
+      skills: [
+        {
+          name: "VS Code",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/visualstudiocode.svg",
+        },
+        {
+          name: "Chrome DevTools",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlechrome.svg",
+        },
+        {
+          name: "Git",
+          iconUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg",
+        },
+        {
+          name: "GitHub",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg",
+        },
+        {
+          name: "Postman",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postman.svg",
+        },
+        {
+          name: "Insomnia",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/insomnia.svg",
+        },
+        {
+          name: "Webpack",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webpack.svg",
+        },
+        {
+          name: "Vite",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vite.svg",
+        },
+        {
+          name: "ESLint",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/eslint.svg",
+        },
+        {
+          name: "Prettier",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/prettier.svg",
+        },
+      ],
     },
     {
-      name: "Angular",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <div className="w-8 h-8 bg-red-600 rounded flex items-center justify-center">
-            <span className="text-white font-bold text-lg">A</span>
-          </div>
-        </div>
-      ),
+      title: "🧪 Testing & QA",
+      skills: [
+        {
+          name: "Jest",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jest.svg",
+        },
+        {
+          name: "Mocha",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mocha.svg",
+        },
+        {
+          name: "Cypress",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cypress.svg",
+        },
+        {
+          name: "Playwright",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/playwright.svg",
+        },
+        {
+          name: "Postman API",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postman.svg",
+        },
+      ],
     },
     {
-      name: "Laravel",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center">
-            <span className="text-white font-bold text-lg">L</span>
-          </div>
-        </div>
-      ),
+      title: "🎨 UI / UX & Design",
+      skills: [
+        {
+          name: "HTML5",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg",
+        },
+        {
+          name: "CSS3",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg",
+        },
+        {
+          name: "Tailwind CSS",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg",
+        },
+        {
+          name: "Material UI",
+          iconUrl: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mui.svg",
+        },
+        {
+          name: "Framer Motion",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/framer.svg",
+        },
+        {
+          name: "Figma",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/figma.svg",
+        },
+      ],
     },
     {
-      name: "Figma",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <div className="w-8 h-8 bg-gradient-to-br from-pink-400 via-blue-400 to-purple-400 rounded flex items-center justify-center">
-            <span className="text-white font-bold text-xs">F</span>
-          </div>
-        </div>
-      ),
+      title: "💳 Payments & Billing",
+      skills: [
+        {
+          name: "Stripe",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/stripe.svg",
+        },
+        {
+          name: "Razorpay",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/razorpay.svg",
+        },
+        {
+          name: "PayPal",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/paypal.svg",
+        },
+        {
+          name: "Webhooks",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webhooksdotio.svg",
+        },
+        {
+          name: "Subscriptions",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/stripe.svg",
+        },
+      ],
     },
     {
-      name: "Django",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <span className="text-green-500 font-bold text-sm">django</span>
-        </div>
-      ),
+      title: "🗺️ Maps & Location Services",
+      skills: [
+        {
+          name: "Google Maps",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlemaps.svg",
+        },
+        {
+          name: "Leaflet.js",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/leaflet.svg",
+        },
+        {
+          name: "Mapbox",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mapbox.svg",
+        },
+      ],
     },
     {
-      name: "Tailwind CSS",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <svg
-            className="w-8 h-8 text-cyan-400"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
-            <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
-          </svg>
-        </div>
-      ),
+      title: "📂 File & Media Handling",
+      skills: [
+        {
+          name: "Cloudinary",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cloudinary.svg",
+        },
+        {
+          name: "Firebase Storage",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/firebase.svg",
+        },
+        {
+          name: "File Uploads",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazons3.svg",
+        },
+        {
+          name: "PDF Generation",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobeacrobatreader.svg",
+        },
+        {
+          name: "Image Compression",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cloudinary.svg",
+        },
+      ],
     },
     {
-      name: "Bootstrap",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <div className="w-8 h-8 bg-purple-600 rounded flex items-center justify-center">
-            <span className="text-white font-bold text-lg">B</span>
-          </div>
-        </div>
-      ),
-    },
-    {
-      name: "jQuery",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
-            <span className="text-white font-bold text-lg">j</span>
-          </div>
-        </div>
-      ),
-    },
-    {
-      name: "Wordpress",
-      logo: (
-        <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-          <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
-            <span className="text-white font-bold text-lg">W</span>
-          </div>
-        </div>
-      ),
+      title: "🚀 Performance & Optimization",
+      skills: [
+        {
+          name: "Code Splitting",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webpack.svg",
+        },
+        {
+          name: "Lazy Loading",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg",
+        },
+        {
+          name: "Caching",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/redis.svg",
+        },
+        {
+          name: "SEO Optimization",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg",
+        },
+        {
+          name: "Lighthouse",
+          iconUrl:
+            "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlechrome.svg",
+        },
+      ],
     },
   ];
 
@@ -185,20 +440,55 @@ function Skills() {
           </h2>
         </div>
 
-        {/* Skills Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="relative bg-[#1E1E1E] rounded-lg p-6 text-center hover:bg-[#2A2A2A] transition-all duration-300 group border border-gray-800 hover:border-[#FF014F]/30 shadow-lg hover:shadow-[#FF014F]/10 hover:shadow-xl transform hover:-translate-y-1"
-            >
-              {/* Skill Logo */}
-              <div className="flex justify-center mb-4">{skill.logo}</div>
-
-              {/* Skill Name */}
-              <h3 className="text-white text-sm font-medium group-hover:text-[#FF014F] transition-colors duration-300">
-                {skill.name}
+        {/* Skills Categories */}
+        <div className="space-y-12">
+          {skillCategories.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="space-y-6">
+              {/* Category Title */}
+              <h3 className="text-2xl font-bold text-white border-b border-gray-700 pb-2">
+                {category.title}
               </h3>
+
+              {/* Skills Grid for this Category */}
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                {category.skills.map((skill, skillIndex) => {
+                  return (
+                    <div
+                      key={skillIndex}
+                      className="relative bg-[#1E1E1E] rounded-lg p-4 text-center hover:bg-[#2A2A2A] transition-all duration-300 group border border-gray-800 hover:border-[#FF014F]/30 shadow-lg hover:shadow-[#FF014F]/10 hover:shadow-xl transform hover:-translate-y-1"
+                    >
+                      {/* Skill Icon */}
+                      <div className="flex justify-center mb-3">
+                        {skill.iconUrl ? (
+                          <div className="w-10 h-10 flex items-center justify-center">
+                            <img
+                              src={skill.iconUrl}
+                              alt={skill.name}
+                              className="w-8 h-8 object-contain"
+                              style={{
+                                filter:
+                                  "brightness(0) saturate(100%) invert(1)",
+                                opacity: 0.8,
+                              }}
+                            />
+                          </div>
+                        ) : (
+                          <div className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center">
+                            <span className="text-white font-bold text-sm">
+                              {skill.name.charAt(0)}
+                            </span>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Skill Name */}
+                      <h4 className="text-white text-xs font-medium group-hover:text-[#FF014F] transition-colors duration-300">
+                        {skill.name}
+                      </h4>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           ))}
         </div>
