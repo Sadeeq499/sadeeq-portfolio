@@ -3,17 +3,21 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppWidget = () => {
-  const phoneNumber = "923065799407"; // Pakistan format (92 country code + number without 0)
+  const phoneNumber = "923065799407";
   const message =
-    "Assalam o Alaikum, I need help or I'm interested in your services."; // Default message
+    "Assalam o Alaikum, I need help or I'm interested in your services.";
 
   const handleClick = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
-    window.open(whatsappUrl, "_blank");
+    
+    // Safe window usage
+    if (typeof window !== "undefined") {
+      window.open(whatsappUrl, "_blank");
+    }
   };
-a
+
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <button
