@@ -30,7 +30,7 @@ const inter = Inter({
 export const metadata = {
   title: "Muhammad Sadeeq - Full Stack Developer & UI/UX Designer",
   description:
-    "Professional Full Stack Developer and UI/UX Designer with 5+ years of experience. Specializing in React, Next.js, Node.js, and modern web technologies. Available for freelance projects and collaborations.",
+    "Professional Full Stack Developer and UI/UX Designer with 6+ years of experience. Specializing in React, Next.js, Node.js, and modern web technologies. Expert in building enterprise systems for GS1 Saudi Arabia, Nartec-Solutions, and more.",
   keywords: [
     "Full Stack Developer",
     "UI/UX Designer",
@@ -43,6 +43,9 @@ export const metadata = {
     "Web Developer",
     "Software Engineer",
     "Freelance Developer",
+    "GS1 Saudi Arabia",
+    "Nartec-Solutions",
+    "MERN Stack Expert",
     "Portfolio",
   ],
   authors: [{ name: "Muhammad Sadeeq" }],
@@ -68,7 +71,7 @@ export const metadata = {
     url: "https://www.sadeeqdev.tech",
     title: "Muhammad Sadeeq - Full Stack Developer & UI/UX Designer",
     description:
-      "Professional Full Stack Developer and UI/UX Designer with 5+ years of experience. Specializing in React, Next.js, Node.js, and modern web technologies.",
+      "Professional Full Stack Developer and UI/UX Designer with 6+ years of experience. Specializing in React, Next.js, Node.js, and modern web technologies.",
     siteName: "Muhammad Sadeeq Portfolio",
     images: [
       {
@@ -83,7 +86,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Muhammad Sadeeq - Full Stack Developer & UI/UX Designer",
     description:
-      "Professional Full Stack Developer and UI/UX Designer with 5+ years of experience. Specializing in React, Next.js, Node.js, and modern web technologies.",
+      "Professional Full Stack Developer and UI/UX Designer with 6+ years of experience. Specializing in React, Next.js, Node.js, and modern web technologies.",
     images: ["/og-image.jpg"],
     creator: "@muhammadsadeeq",
   },

@@ -5,12 +5,13 @@ export const metadata = {
   title:
     "Resume - Muhammad Sadeeq | Full Stack Engineer Experience & Education",
   description:
-    "View Muhammad Sadeeq's professional resume including 5+ years of full-stack development experience at Nartec-Solutions, ExtremSoft, and Tech Emulsion. Education from Islamia College University Peshawar in Software Engineering.",
+    "View Muhammad Sadeeq's professional resume including 6+ years of full-stack development experience at GS1 Saudi Arabia, Nartec-Solutions, ExtremSoft, and Tech Emulsion. Education from Islamia College University Peshawar in Software Engineering.",
   keywords: [
     "Muhammad Sadeeq Resume",
     "Full Stack Engineer Resume",
     "Software Engineer CV",
     "Web Developer Experience",
+    "GS1 Saudi Arabia",
     "Nartec-Solutions",
     "ExtremSoft",
     "Tech Emulsion",
@@ -28,7 +29,7 @@ export const metadata = {
     title:
       "Resume - Muhammad Sadeeq | Full Stack Engineer Experience & Education",
     description:
-      "View Muhammad Sadeeq's professional resume including 5+ years of full-stack development experience at Nartec-Solutions, ExtremSoft, and Tech Emulsion.",
+      "View Muhammad Sadeeq's professional resume including 6+ years of full-stack development experience at GS1 Saudi Arabia, Nartec-Solutions, ExtremSoft, and Tech Emulsion.",
     url: "https://www.sadeeqdev.tech/resume",
     type: "profile",
     images: [
@@ -45,7 +46,7 @@ export const metadata = {
     title:
       "Resume - Muhammad Sadeeq | Full Stack Engineer Experience & Education",
     description:
-      "View Muhammad Sadeeq's professional resume including 5+ years of full-stack development experience at Nartec-Solutions, ExtremSoft, and Tech Emulsion.",
+      "View Muhammad Sadeeq's professional resume including 6+ years of full-stack development experience at GS1 Saudi Arabia, Nartec-Solutions, ExtremSoft, and Tech Emulsion.",
     images: ["/sadeeq-profile.jpeg"],
   },
   alternates: {

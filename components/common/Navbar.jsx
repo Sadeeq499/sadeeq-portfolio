@@ -101,11 +101,11 @@ function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <div className="flex-shrink-0">
+        {/* <div className="flex-shrink-0">
           <button className="bg-[#FF014F] text-white px-6 py-3 rounded-md font-semibold text-sm hover:bg-[#e6003a] hover:-translate-y-0.5 transition-all duration-300 font-inter">
             Hire Me
           </button>
-        </div>
+        </div> */}
 
         {/* Mobile Menu Button */}
         <button className="md:hidden text-white ml-4">

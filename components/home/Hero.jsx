@@ -84,7 +84,7 @@ function Hero() {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-[#FF014F] text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#e6003a] hover:-translate-y-1 transition-all duration-300">
                 Download Resume
               </button>
@@ -93,7 +93,7 @@ function Hero() {
                   Contact Me
                 </button>
               </Link>
-            </div>
+            </div> */}
 
             {/* Social Media Icons */}
             <div className="flex gap-4">

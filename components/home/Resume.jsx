@@ -37,9 +37,16 @@ function Resume() {
 
   const experienceData = [
     {
+      company: "GS1 Saudi Arabia",
+      position: "Software Engineer (MERN Stack)",
+      period: "Dec 2025 - PRESENT",
+      description:
+        "Developing and maintaining enterprise-grade web applications and internal tools based on GS1 global standards. Utilizing the MERN stack to build scalable solutions that streamline supply chain and retail operations, while ensuring high performance and adherence to international technical specifications.",
+    },
+    {
       company: "Nartec-Solutions",
       position: "Full Stack Engineer",
-      period: "Nov 2023 - PRESENT",
+      period: "Nov 2023 - Dec 2025",
       description:
         "Developed comprehensive software solutions including Inventory Control & Tracking systems, Traceability System Solutions for supply chain management, Warehouse Management Solutions, Fixed Assets/Asset Tracking & Tagging systems, Barcode/Labeling/POS & scanning systems, Queue Management Systems, and Field Service Management applications. Provided consulting, deployment, and support for technology systems.",
     },

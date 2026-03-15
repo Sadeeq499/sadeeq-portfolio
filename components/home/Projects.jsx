@@ -1,8 +1,45 @@
 import React from "react";
-import { FaExternalLinkAlt, FaCode, FaMobile, FaGlobe } from "react-icons/fa";
+import Image from "next/image";
+import { FaExternalLinkAlt, FaCode, FaMobile, FaGlobe, FaPalette, FaHome, FaCalculator, FaBarcode } from "react-icons/fa";
 
 function Projects() {
   const projects = [
+    {
+      title: "Artworks by Afreen",
+      description:
+        "A vibrant e-commerce platform for unique digital artworks and physical merchandise. Specializing in custom stickers, character illustrations, and artistic prints with an engaging user experience.",
+      image: "/api/placeholder/400/300",
+      live: "https://www.artworksbyafreen.com/",
+      category: "E-Commerce",
+      icon: FaPalette,
+    },
+    {
+      title: "Selftor",
+      description:
+        "A comprehensive real estate and short-term rental marketplace similar to Airbnb. Features include seamless property listings, service bookings, and a sleek user interface for vacation stays.",
+      image: "/api/placeholder/400/300",
+      live: "https://selftor.com/",
+      category: "Real Estate",
+      icon: FaHome,
+    },
+    {
+      title: "ME Accounts Audit",
+      description:
+        "Professional auditing and accounting service portal for the UAE. Provides internal/external auditing, VAT consultancy, and financial advisory services focused on regional compliance.",
+      image: "/api/placeholder/400/300",
+      live: "https://meaccountsaudit.com/",
+      category: "Financial Services",
+      icon: FaCalculator,
+    },
+    {
+      title: "GS1 Saudi Arabia",
+      description:
+        "The official GS1 portal for Saudi Arabia, providing globally recognized barcodes and product identification standards for local and international businesses.",
+      image: "/api/placeholder/400/300",
+      live: "https://gs1.org.sa/",
+      category: "Business Standards",
+      icon: FaBarcode,
+    },
     {
       title: "Sabi Unique Collection",
       description:
@@ -24,7 +61,7 @@ function Projects() {
     {
       title: "GSTSA1",
       description:
-        "Saudi Arabia technology & compliance company delivering barcode, RFID, inventory management, product tracking, and supply chain authentication solutions. :contentReference[oaicite:0]{index=0}",
+        "Saudi Arabia technology & compliance company delivering barcode, RFID, inventory management, product tracking, and supply chain authentication solutions.",
       image: "/api/placeholder/400/300",
       live: "https://gstsa1.org/",
       category: "Tax Services",
@@ -140,7 +177,8 @@ function Projects() {
     },
     {
       title: "Amex Financial",
-      description: "---",
+      description:
+        "Comprehensive financial platform providing digital banking solutions, transaction monitoring, and secure enterprise financial management tools.",
       image: "/api/placeholder/400/300",
       live: "https://amex.fatsme.online/",
       category: "Fintech",
@@ -173,8 +211,17 @@ function Projects() {
                 {/* Project Image */}
                 <div className="relative h-48 bg-gradient-to-br from-gray-800 to-gray-900 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#FF014F]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <IconComponent className="w-16 h-16 text-[#FF014F] opacity-50" />
+                  <div className="absolute inset-0 flex items-center justify-center p-4">
+                    {project.image && project.image !== "/api/placeholder/400/300" ? (
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    ) : (
+                      <IconComponent className="w-16 h-16 text-[#FF014F] opacity-50" />
+                    )}
                   </div>
                   {/* Category Badge */}
                   <div className="absolute top-4 left-4">
@@ -216,11 +263,11 @@ function Projects() {
         </div>
 
         {/* View More Button */}
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <button className="bg-transparent border-2 border-[#FF014F] text-[#FF014F] hover:bg-[#FF014F] hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
             View All Projects
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
